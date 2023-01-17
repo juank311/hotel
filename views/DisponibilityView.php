@@ -1,6 +1,6 @@
 <?php
-class DisponibilityView {
-    public function showAvailability($disponibility) {
+class class_DisponibilityView {
+    public function showAvailability($obj_Disponibility) {
         echo  '<div class="container">';
         echo '<table class="table col-md-12">';
         echo '<thead class="thead-dark">';
@@ -14,7 +14,7 @@ class DisponibilityView {
         echo '</tr>';
         echo '</thead>';
         echo '<tbody>';
-        foreach ($disponibility as $row) {
+        foreach ($obj_Disponibility as $row) {
             echo '<tr>';
             echo "<td>" . $row['room_type_id'] . "</td>";
             echo "<td>" . $row['startdate'] . "</td>";
