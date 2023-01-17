@@ -1,7 +1,8 @@
 <?php
 class DisponibilityView {
     public function showAvailability($disponibility) {
-        echo '<table class="table">';
+        echo  '<div class="container">';
+        echo '<table class="table col-md-12">';
         echo '<thead class="thead-dark">';
         echo '<tr>';
         echo '<th scope="col">ID Tipo Habitacion</th>';
@@ -25,5 +26,6 @@ class DisponibilityView {
         }
         echo '</tbody>';
 echo '</table>';
+echo '</div>';
 }
 }

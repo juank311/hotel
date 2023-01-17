@@ -9,8 +9,8 @@ class DisponibilityController {
         $this->disponibilityView = new DisponibilityView();
     }
 
-    public function checkAvailability($date, $roomType) {
-        $disponibility = $this->disponibilityModel->checkAvailability($date, $roomType);
-        $this->disponibilityView->showAvailability($disponibility, $date);
+    public function checkAvailability($startdate, $enddate, $roomType) {
+        $disponibility = $this->disponibilityModel->checkAvailability($startdate, $enddate, $roomType);
+        $this->disponibilityView->showAvailability($disponibility, $startdate);
     }
 }
