@@ -1,4 +1,9 @@
-<?php include '../init.php'; ?>
+<?php
+include '../models/DisponibilityModel.php';
+include '../views/DisponibilityView.php';
+include '../controllers/DisponibilityController.php';
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -34,6 +39,7 @@
         <br>
     </div>
     <?php
+    //Validacion si estan seteados los campos, para luego recoger las variables por POST y enviarlas al controlador
     if (isset($_POST['startdate']) && isset($_POST['roomType']) && isset($_POST['enddate'])) {
         $startdate = $_POST['startdate'];
         $enddate = $_POST['enddate'];

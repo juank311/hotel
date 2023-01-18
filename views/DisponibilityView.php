@@ -11,6 +11,7 @@ class class_DisponibilityView {
         echo '<th scope="col">Numero de habitaciones</th>';
         echo '<th scope="col">Numero de reservas</th>';
         echo '<th scope="col">Habitaciones disponibles</th>';
+        echo '<th scope="col">Acciones</th>';
         echo '</tr>';
         echo '</thead>';
         echo '<tbody>';
@@ -27,5 +28,6 @@ class class_DisponibilityView {
         echo '</tbody>';
 echo '</table>';
 echo '</div>';
+
 }
 }
